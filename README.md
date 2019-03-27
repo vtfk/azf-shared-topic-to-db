@@ -26,6 +26,7 @@ COSMOSDB_CONNECTION=mongodb://<your-cosmosdb-connection-string-including-db-name
 COSMOSDB_COLLECTION=cosmosdb-database-collection-name
 SERVICEBUS_CONNECTION=sb-sharedaccesspolicies-rootmanagesharedaccesskey-primaryconnectionstring
 SERVICEBUS_TOPIC_NAME=name-for-topic-to-subscribe-to
+SERVICEBUS_TOPIC_SUBSCRIPTION=name-for-topic-subscribtion
 ```
 
 - add function
@@ -46,7 +47,8 @@ SERVICEBUS_TOPIC_NAME=name-for-topic-to-subscribe-to
     "COSMOSDB_CONNECTION": "mongodb://<your-cosmosdb-connection-string-including-db-name>",
     "COSMOSDB_COLLECTION": "cosmosdb-database-collection-name",
     "SERVICEBUS_CONNECTION": "<sb-sharedaccesspolicies-rootmanagesharedaccesskey-primaryconnectionstring>",
-    "SERVICEBUS_TOPIC_NAME": "<name-for-topic-to-subscribe-to>"
+    "SERVICEBUS_TOPIC_NAME": "<name-for-topic-to-subscribe-to>",
+    "SERVICEBUS_TOPIC_SUBSCRIPTION": "<name-for-topic-subscription>"
   }
 }
 ```
